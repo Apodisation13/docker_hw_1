@@ -3,8 +3,8 @@ POST http://localhost:8000/api/v1/products/
 Content-Type: application/json
 
 {
-  "title": "Лук",
-  "description": "ФУУУУУУУУ"
+  "title": "Колбаска",
+  "description": "Супер!"
 }
 
 ###
@@ -68,7 +68,7 @@ Content-Type: application/json
   "address": "лукина варина 3",
   "positions": [
     {
-      "product": 4,
+      "product": 2,
       "quantity": 17,
       "price": 1734
     }
@@ -95,14 +95,14 @@ Content-Type: application/json
 ###
 
 # обновляем записи на складе по его номеру
-PATCH http://localhost:8000/api/v1/stocks/14/
+PATCH http://localhost:8000/api/v1/stocks/1/
 Content-Type: application/json
 
 {
   "positions": [
     {
       "product": 2,
-      "quantity": 0,
+      "quantity": 33,
       "price": 1300.80
     },
     {
